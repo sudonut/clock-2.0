@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(/imgs/day.jpg) no-repeat center/cover;
+}
+
+.left-wrapper {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quotes-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 101% 0%;
+      grid-template-columns: 101% 0%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 61%;
+  height: 18%;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+#quote {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.fa-sync-alt {
+  margin-top: 15px;
+}
+
+.time-info {
+  margin-top: 44%;
+}
+
+#greeting {
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 7px;
+}
+
+.fa-sun {
+  margin-right: 1rem;
+}
+
+#time {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12rem;
+}
+
+#time-zone {
+  display: inline;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.right-wrapper {
+  height: 100%;
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
