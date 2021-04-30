@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
@@ -14,6 +14,7 @@ body {
 .app {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .main-content {
@@ -36,7 +37,7 @@ body {
   grid-template-columns: 101% 0%;
   align-content: center;
   max-width: 61%;
-  height: 18%;
+  height: 19%;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -62,7 +63,7 @@ body {
 
 .fa-sun {
   margin-right: 1rem;
-} 
+}
 
 #time {
   display: inline-flex;
@@ -78,4 +79,36 @@ body {
 .right-wrapper {
   height: 100%;
   width: 50%;
+}
+
+.wip-container {
+  height: 82%;
+}
+
+#show-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 7px 11px 20px;
+  margin-left: 62%;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  border-radius: 42px;
+  border: none;
+  cursor: pointer;
+  color: #7d7d7d;
+  background-color: #ffffff;
+}
+
+.more {
+  color: #303030;
+  display: inline;
+}
+
+.fa-chevron-down {
+  background: black;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: white;
+  padding: 6px 1px 4px 7px;
+  font-size: 1.4rem;
 }
