@@ -32,7 +32,7 @@ body {
   top: 0;
 }
 
-.main-content.active-anim {
+.main-content.active {
   position: absolute;
   -webkit-transition: 2s;
   transition: 2s;
@@ -86,6 +86,10 @@ body {
   letter-spacing: 7px;
 }
 
+#greet {
+  display: inline;
+}
+
 .fa-sun {
   margin-right: 1rem;
 }
@@ -129,13 +133,19 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
   border-radius: 42px;
+  min-width: 14%;
   border: none;
   cursor: pointer;
   color: #7d7d7d;
   background-color: #ffffff;
 }
 
-.more {
+#slide-btn.active {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#more {
   color: #303030;
   display: inline;
 }
@@ -146,6 +156,16 @@ body {
   margin-left: 5px;
   color: white;
   padding: 6px 1px 4px 7px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   font-size: 1.4rem;
+}
+
+.fa-chevron-down.active {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  content: "LESS";
 }
 /*# sourceMappingURL=style.css.map */

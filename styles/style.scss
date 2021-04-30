@@ -28,7 +28,7 @@ body {
   top: 0;
 }
 
-.main-content.active-anim {
+.main-content.active {
   position: absolute;
   transition: 2s;
   top: -55%;
@@ -71,6 +71,10 @@ body {
   letter-spacing: 7px;
 }
 
+#greet {
+  display: inline;
+}
+
 .fa-sun {
   margin-right: 1rem;
 }
@@ -108,13 +112,19 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
   border-radius: 42px;
+  min-width: 14%;
+
   border: none;
   cursor: pointer;
   color: #7d7d7d;
   background-color: #ffffff;
 }
 
-.more {
+#slide-btn.active {
+  transition: 2s;
+}
+
+#more {
   color: #303030;
   display: inline;
 }
@@ -125,5 +135,12 @@ body {
   margin-left: 5px;
   color: white;
   padding: 6px 1px 4px 7px;
+  transition: 0.8s;
   font-size: 1.4rem;
+}
+
+.fa-chevron-down.active {
+  transition: 0.8s;
+  transform: rotate(180deg);
+  content: "LESS";
 }
