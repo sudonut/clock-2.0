@@ -16,7 +16,7 @@ body {
   height: 102%;
   width: 100%;
   overflow: hidden;
-  background: url(/imgs/day.jpg) no-repeat center / cover;
+  // background: url(/imgs/day.jpg) no-repeat center / cover;
 }
 
 .main-content {
@@ -24,13 +24,13 @@ body {
   width: 100%;
   display: flex;
   position: relative;
-  transition: 2s;
+  transition: 1s;
   top: 0;
 }
 
 .main-content.active {
   position: absolute;
-  transition: 2s;
+  transition: 1s;
   top: -55%;
 }
 
