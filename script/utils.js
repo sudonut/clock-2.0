@@ -13,6 +13,7 @@ function getPos(pos) {
     let country = data.sys.country;
 
     document.getElementById('location').innerHTML = `IN ${city}, ${country}`;
+    document.getElementById('current-tz').innerHTML = (Intl.DateTimeFormat().resolvedOptions().timeZone).replace("_", ' ');
   });
 }
 
