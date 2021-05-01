@@ -13,13 +13,19 @@ document.getElementById('slide-btn').addEventListener('click', () => {
 
 function timeParse() {
   let time = new Date();
-  let hours = time.getHours() > 12 ? time.getHours() - 12 : time.getHours();
+  let hours = time.getHours() > 12 ? time.getHours() - 1 : time.getHours();
   let minutes = time.getMinutes() < 10 ? "0" + time.getMinutes() : time.getMinutes();
   let seconds = time.getSeconds() < 10 ? "0" + time.getSeconds() : time.getSeconds();
   let am_pm = time.getHours() >= 12 ? "PM" : "AM"
+
+  if (hours === 0) {
+    hours = 12;
+  }
+  
   document.getElementById('time').innerHTML = `${hours}:${minutes}`;
 
-  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  // console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+
 }
 
 function backgroundGreet() {
