@@ -17,12 +17,10 @@ function getTime() {
   let minutes = time.getMinutes() < 10 ? "0" + time.getMinutes() : time.getMinutes();
   let seconds = time.getSeconds() < 10 ? "0" + time.getSeconds() : time.getSeconds();
   let am_pm = time.getHours() >= 12 ? "PM" : "AM"
-  
   if (hours === 0) {
     hours = 12;
   }
-
-  document.getElementById('time').innerHTML = `${hours}:${minutes}`;
+  document.getElementById('time').textContent = `${hours}:${minutes}`;
 }
 
 // Background change on time of day
@@ -46,15 +44,20 @@ function backgroundGreet() {
   }
 }
 
-function dayInfo() {
+function dateInfo() {
+  Date.prototype.getWeek = function() {
+    let janFirst = new Date(this.getFullYear(), 0, 1);
+    return Math.floor((((this - janFirst) / 86400000) + janFirst.getDay() + 1) / 7) 
+  }
   let day = new Date();
+  let currentWeek = day.getWeek();
 
+  document.getElementById('current-week').textContent = currentWeek;
   document.getElementById('week-day').innerHTML = day.getDay() + 1;
-
   document.getElementById('day-of-year').innerHTML = (Math.ceil((day - new Date(day.getFullYear(), 0, 1)) / 86400000));
 }
 
 setInterval(getTime, 1000);
 backgroundGreet();
-dayInfo();
+dateInfo();
 
