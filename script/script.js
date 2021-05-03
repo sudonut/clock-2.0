@@ -18,7 +18,7 @@ function displayQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   quoteContent.textContent = randomQuote.quote;
   quoteAuthor.textContent = randomQuote.author;
-}
+};
 
 let quotes = [
   {
@@ -64,7 +64,7 @@ function getTime() {
   }
   document.getElementById("time").textContent = `${hours}:${minutes}`;
   document.getElementById("am-pm").textContent = am_pm;
-}
+};
 
 function toggleNight() {
   let nightBackground = document.querySelector(".blur-bg");
@@ -90,7 +90,7 @@ function backgroundGreet() {
     // Afternoon
     greeting.textContent = "GOOD AFTERNOON, IT'S CURRENTLY";
     document.body.style.background =
-      "url(./imgs/day.jpg) no-repeat center / cover";       
+      "url(./imgs/day.jpg) no-repeat center / cover";
   } else {
     // Evening
     greeting.textContent = "GOOD EVENING, IT'S CURRENTLY";
@@ -98,7 +98,7 @@ function backgroundGreet() {
       "url(./imgs/night.jpg) no-repeat center / cover";
       toggleNight();
   }
-}
+};
 
 // Calculate current day of the week, and week of the year
 function dateInfo() {
@@ -115,10 +115,9 @@ function dateInfo() {
   document.getElementById("day-of-year").innerHTML = Math.ceil(
     (day - new Date(day.getFullYear(), 0, 1)) / 86400000
   );
-}
+};
 
 setInterval(getTime, 1000);
 displayQuote();
 backgroundGreet();
 dateInfo();
-
