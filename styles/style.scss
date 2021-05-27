@@ -170,8 +170,7 @@ body {
 
 @media (max-width: 1170px) {
   .left-wrapper {
-    grid-template-columns: 100%;
-    grid-template-rows: 59% 31% 2%;
+    grid-template-columns: 56% 36%;
   }
 
   .quotes-wrap {
@@ -179,21 +178,31 @@ body {
     max-width: 61%;
   }
 
-  .time-info {
-    grid-column-start: span 2;
-    position: relative;
-    left: 7%;
-  }
-
   #time {
     font-size: 10rem;
   }
 
   #slide-btn {
-    left: 6%;
-    min-width: 12%;
-    margin-left: 0;
+    margin-left: 40%;
   }
+}
+
+@media (max-width: 720px) {
+  // .time-info {
+  //   & #greeting {
+  //     font-size: 1.3rem;
+  //   }
+
+  //   & #time {
+  //     font-size: 8rem;
+  //   }
+  //   & #am-pm {
+  //     font-size: 2rem;
+  //   }
+  //   & #location {
+  //     font-size: 1.1rem;
+  //   }
+  // }
 }
 
 @media (max-width: 376px) {

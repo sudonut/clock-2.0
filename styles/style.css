@@ -194,28 +194,18 @@ body {
 
 @media (max-width: 1170px) {
   .left-wrapper {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 59% 31% 2%;
-        grid-template-rows: 59% 31% 2%;
+    -ms-grid-columns: 56% 36%;
+        grid-template-columns: 56% 36%;
   }
   .quotes-wrap {
     left: 7%;
     max-width: 61%;
   }
-  .time-info {
-    -ms-grid-column: span 2;
-        grid-column-start: span 2;
-    position: relative;
-    left: 7%;
-  }
   #time {
     font-size: 10rem;
   }
   #slide-btn {
-    left: 6%;
-    min-width: 12%;
-    margin-left: 0;
+    margin-left: 40%;
   }
 }
 

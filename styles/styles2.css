@@ -14,6 +14,8 @@
 .blur-bg.night {
   -webkit-filter: blur(10px);
           filter: blur(10px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -64,5 +66,13 @@
 
 .night-tog.active {
   color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .weather-wrapper {
+    -ms-grid-columns: 56% 50%;
+        grid-template-columns: 56% 50%;
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=styles2.css.map */

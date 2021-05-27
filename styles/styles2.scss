@@ -15,6 +15,7 @@ $night-font: #ffffff;
 
 .blur-bg.night{
   filter: blur(10px);
+  transform: scale(1.1);
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -55,4 +56,11 @@ $night-font: #ffffff;
 
 .night-tog.active {
   color: $night-font;
+}
+
+@media (max-width: 1000px) {
+  .weather-wrapper {
+    grid-template-columns: 56% 50%;
+    font-size: 1.4rem;
+  }
 }
