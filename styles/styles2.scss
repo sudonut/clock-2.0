@@ -64,3 +64,27 @@ $night-font: #ffffff;
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 460px) {
+  .weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 85%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .left-data, .right-data {
+    width: 100%;
+  }
+  .left-data {
+    border-right: none;
+  }
+  .right-data {
+    margin: 0;
+  }
+  .data-header {
+    font-size: 1.1rem;
+  }
+}
