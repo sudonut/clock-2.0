@@ -259,4 +259,113 @@ body {
     font-size: 1rem;
   }
 }
+
+.blur-bg, .secondary-content {
+  position: absolute;
+  height: 55%;
+  top: 100%;
+  width: 100%;
+}
+
+.blur-bg {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(175, 175, 175, 0.9) 37%);
+}
+
+.blur-bg.night {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.secondary-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 66%;
+  width: 82%;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.left-data {
+  border-right: 1px solid gray;
+}
+
+.right-data {
+  width: 48%;
+  margin-left: 20%;
+}
+
+.data-header {
+  color: #272727;
+  font-weight: 300;
+}
+
+.data-footer {
+  color: black;
+}
+
+.night-tog.active {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .weather-wrapper {
+    -ms-grid-columns: 56% 50%;
+        grid-template-columns: 56% 50%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .weather-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+    width: 85%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .left-data, .right-data {
+    width: 100%;
+  }
+  .left-data {
+    border-right: none;
+  }
+  .right-data {
+    margin: 0;
+  }
+  .data-header {
+    font-size: 1.1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
