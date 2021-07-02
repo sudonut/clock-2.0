@@ -187,24 +187,6 @@ body {
   }
 }
 
-@media (max-width: 720px) {
-  // .time-info {
-  //   & #greeting {
-  //     font-size: 1.3rem;
-  //   }
-
-  //   & #time {
-  //     font-size: 8rem;
-  //   }
-  //   & #am-pm {
-  //     font-size: 2rem;
-  //   }
-  //   & #location {
-  //     font-size: 1.1rem;
-  //   }
-  // }
-}
-
 @media (max-width: 460px) {
   .left-wrapper {
     grid-template-rows: 59% 26% 13%;
