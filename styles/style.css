@@ -35,8 +35,8 @@ body {
   position: absolute;
   -webkit-transition: 1s;
   transition: 1s;
+  transform: translateY(-55%);
   -webkit-transform: translateY(-55%);
-          transform: translateY(-55%);
 }
 
 .left-wrapper {
