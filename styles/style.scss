@@ -30,7 +30,7 @@ body {
 .main-content.active {
   position: absolute;
   transition: 1s;
-  top: -55%;
+  transform: translateY(-55%);
 }
 
 .left-wrapper {
