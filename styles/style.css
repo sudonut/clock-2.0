@@ -13,6 +13,15 @@ html, body {
   overflow: hidden;
 }
 
+html {
+  min-height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
 .app {
   height: 102%;
   width: 100%;
