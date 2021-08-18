@@ -10,19 +10,11 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-}
-
-html {
-  min-height: -webkit-fill-available;
-}
-
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  position: absolute;
 }
 
 .app {
-  height: 102%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
