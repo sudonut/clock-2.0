@@ -78,27 +78,37 @@ function toggleNight() {
 // Background change on time of day
 function backgroundGreet() {
   let greeting = document.getElementById("greet");
+  let greetingText = ""
   let today = new Date();
   hour = today.getHours();
 
   if (hour >= 5 && hour < 12) {
     // Morning
-    greeting.textContent = "GOOD MORNING, IT'S CURRENTLY";
+    greetingText = "GOOD MORNING, IT'S CURRENTLY"
+    greeting.textContent = greetingText;
     document.body.style.background =
       "url(./imgs/morning.jpg) no-repeat center / cover";
   } else if (hour >= 12 && hour < 18) {
     // Afternoon
-    greeting.textContent = "GOOD AFTERNOON, IT'S CURRENTLY";
+    greetingText = "GOOD AFTERNOON, IT'S CURRENTLY"
+    greeting.textContent = greetingText;
     document.body.style.background =
       "url(./imgs/day.jpg) no-repeat center / cover";
   } else {
     // Evening
-    greeting.textContent = "GOOD EVENING, IT'S CURRENTLY";
+    greetingText = "GOOD EVENING, IT'S CURRENTLY"
+    greeting.textContent = greetingText;
     document.body.style.background =
       "url(./imgs/night.jpg) no-repeat center / cover";
       toggleNight();
   }
+  if (window.innerHeight <= 1067) {
+    greetingText = greetingText.slice(0, -16);
+    greeting.textContent = greetingText;
+  }
 };
+
+
 
 // Calculate current day of the week, and week of the year
 function dateInfo() {
