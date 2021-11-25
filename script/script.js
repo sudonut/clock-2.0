@@ -78,7 +78,7 @@ function toggleNight() {
 // Background change on time of day
 function backgroundGreet() {
   let greeting = document.getElementById("greet");
-  let greetingText = ""
+  let greetingText = "";
   let today = new Date();
   hour = today.getHours();
 
